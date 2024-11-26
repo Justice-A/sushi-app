@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushi Website</title>
     <link rel="stylesheet" href="./css/sushi-variables.css"/>
-     <link rel="stylesheet" href="./css/sushi-website.css"/>
+    <link rel="stylesheet" href="./css/sushi-website.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -55,7 +57,7 @@
     </header>
     <section class="hero">
       <div class="hero-content container">
-
+       <div data-aos="fade-right">
         <div class="main-text">
           <div class="hero-text">
             <p>Sushi Bliss, Every</p>
@@ -72,7 +74,8 @@
             <span class="watch">Watch Video<i class="bi bi-play-btn"></i></span>
           </div>
         </div>
-
+      </div>
+        <div data-aos="fade-left">
         <div class="image-container">
           <span class="description">Best Sushi Ever! </span>
           <img src="../sushi-images/main header.png" class="image" alt="" />
@@ -96,8 +99,10 @@
         </div>
       </div>
     </div>
+    </div>
     </section>
     <section class="next-hero">
+      <div data-aos="fade-down">
       <div class="next-hero-contents container">
         <div class="Popular-categories">
           <div class="label">CUSTOMERS FAVORITE</div>
@@ -126,8 +131,10 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
     <section class="special-dishes">
+      <div data-aos="fade-down">
       <div class="special-dishes container">
         <div class="label">special dishes</div>
         <div class="next-label">Best Dish From Our Menu</div>
@@ -180,14 +187,17 @@
          
         </div>
         </div>
+      </div>
     </section>
     <section class="testimonials">
       <div class="testimonials-content container">
+        <div data-aos="fade-right">
         <div class="green-label">
           <img src="../sushi-images//our best chef.png" class="testimonials-image" alt="" />
           <div class="chef-description">Our best chef</div>
         </div>
-
+      </div>
+        <div data-aos="fade-left">
         <div class="testimonial-wrapper">
           <div class="label">testimonials</div>
           <div class="next-label"><p>What our customers says</p>
@@ -223,12 +233,14 @@
               </div>
             </div>
           </div>
+        </div>
 
         </div>
       </div>
     </section>
     <section class="catering">
       <div class="catering-content container">
+        <div data-aos="fade-right">
         <div class="culinary-journey">
         <div class="label">our story and services</div>
         <div class="next-label">Our Culinary Journey And Services</div>
@@ -237,58 +249,57 @@
         <p>hospitality.</p>
         <div class="explore"><p>Explore</p></div>
       </div>
-      <div class="caterers">  
-        <div class="catering-style">
+    </div> 
+    <div data-aos="fade-left">
         <div class="catering-card">
+          <div>
         <span><i class="bi bi-basket3"></i></span>
           <h4>CATERING</h4>
           <p>Delight your guests with our flavours and presentation</p>
         </div>
+       
       
-        <div class="catering-card">
+        <div>
          <i class="bi bi-alarm"></i>
           <h4>FAST DELIVERY</h4>
           <p>We deliver your order promptly to your door</p>
         </div> 
-       </div>
-    
   
-   
-       <div class="catering-style2">
-        <div class="catering-card">
-          
+        <div>
           <i class="bi bi-cart3"></i>
           <h4>ONLINE ORDERING</h4>
           <p>Explore menu & order with ease using our Online Ordering</p>
         </div>
-        <div class="catering-card">
+        <div>
           <i class="bi bi-gift"></i>
           <h4>GIFT CARDS</h4>
           <p>Give the gift of exceptional dining with Foodi Gift Cards</p>
-        </div>
+        </div> 
       </div>
+     </div>
       </div>
-    </div>
     </section>
 
     <section class="footer">
       <div class="footer-content container">
-        <div class="culinary-wrapper">
+        <div class="grid-wrapper">
+          <div data-aos="fade-up-left">
+          <div class="catering-grid">
         <div class="culinary-journey"><span class="nav-logo">S</span>ushi
           <p>Savor the artistry where every dish is a</p>
           <p>culinary masterpiece</p>
         </div>
-         <div class="caterers">  
-        <div class="catering-style">
-        <div class="footer-card">
+      
+          <div>
         <div class="bolden">useful links</div>
           <p>About us</p>
           <p>Events</p>
           <p>Blogs</p>
           <p>FAQ</p>
         </div>
+        
       
-        <div class="footer-card">
+        <div>
           <div class="bolden">Main Menu</div>
          <P>Home</P>
           <p>Offers</p>
@@ -296,28 +307,33 @@
           <p>Reservations</p>
         </div> 
       
-      <div class="footer-card">
+       <div>
         <div class="bolden">Contact Us</div>
           <p>joshuachris000@gmail.com</p>
           <p>+234 123 456 7844</p>
           <p>Social Media</p>
         </div>
-       
        </div>
-    
-      </div>
-      </div>
-      <div class="socials">
+       </div>
+       </div>
+       </div>
+      <div class="socials container">
         <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
         <a href="https://www.x.com"><i class="bi bi-twitter-x"></i></a>
         <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
       </div>
-      <div class="socials-text">
+      <div class="socials-text container">
       <p>Terms & Agreements</p>
       <p>Privacy Policy</p>
       <p>123; Copyright© JNS. All rights reserved</p>
     </div>
       </div>
     </section>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./javascript.js"></script>
   </body>
 </html>  
