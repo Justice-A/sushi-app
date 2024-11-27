@@ -205,15 +205,14 @@ nav {
   position: relative;
   justify-content: center;
   gap: 60px;
-  padding-top: 90px;
+  padding-top: 100px;
   margin-top: 100px;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero-text {
   font-size: 50px;
-  margin-top: 0%;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -273,30 +272,38 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  position: relative;
 }
 .specials-1 {
   width: 50%;
-
+  display: flex;
+  flex-direction: column;
   box-shadow: var(--box-shadow);
-  position: relative;
   border-radius: 10px;
+  gap: 10px;
+}
+.image-text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .specials-2 {
   width: 50%;
-
+  display: flex;
+  flex-direction: column;
   box-shadow: var(--box-shadow);
   position: relative;
   border-radius: 10px;
+  gap: 10px;
+}
+.style-specials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .specials-text {
-  position: absolute;
-  top: 5%;
-  right: 10%;
 }
 .prices {
-  position: absolute;
-  bottom: 5%;
-  right: 10%;
   display: flex;
   flex-direction: column;
 }
@@ -310,6 +317,8 @@ nav {
   .hero-content {
     flex-direction: column;
     gap: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
   }
   .image-container {
     flex-direction: column;
@@ -334,7 +343,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;=
   font-weight: 400;
   font-style: normal;
 }
@@ -458,7 +467,7 @@ nav {
 .green-label {
   border: 1px solid var(--accent-color-1);
   height: 300px;
-  width: 400px;
+  width: 380px;
   border-radius: 60px;
   background-color: var(--accent-color-1);
   margin-bottom: 10px;
@@ -466,7 +475,7 @@ nav {
 }
 .testimonials-image {
   height: 400px;
-  width: 380px;
+  width: 360px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -625,35 +634,71 @@ nav {
   height: 70vh;
   max-width: 980px;
   margin: 0 auto;
+  gap: 40px;
 }
 .catering-grid {
   display: grid;
+  display: flex;
+  flex-direction: row;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 80px;
   align-items: center;
   width: 100%;
   max-width: 850px;
   height: 60vh;
+  justify-content: space-between;
 }
 .catering-grid > .culinary-journey:nth-child(1) {
   grid-column: 1 / span 1;
-  max-width: 200px;
-  padding: 10px;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.catering-grid > .div:nth-child(1) {
+  grid-column: 2 / span 1;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.catering-grid > .div:nth-child(1) {
+  grid-column: 3 / span 1;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.catering-grid > .div:nth-child(1) {
+  grid-column: 4 / span 1;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h4 {
   color: var(--accent-color-1);
   font-size: var(--font-xs);
 }
+.grid-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
 @media (max-width: 800px) {
   .catering-content {
     flex-direction: column;
     gap: 40px;
   }
-  .grid-wrapper {
-    height: auto;
-    max-width: 100%;
-    padding: 10px;
+  .catering-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .grid-child {
+    flex-direction: column;
+    gap: 40px;
   }
 }
 
