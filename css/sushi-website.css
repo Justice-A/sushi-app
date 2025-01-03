@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1280px;
-  max-width: 87%;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -422,7 +422,7 @@ nav {
   position: relative;
 }
 .specials-box:hover {
-  transform: scale(1.05);
+   transform: scale(1.05); 
 }
 .specials-box img {
   width: 140px;
@@ -713,6 +713,7 @@ p {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .socials {
   margin-top: 70px;
@@ -733,6 +734,6 @@ p {
 @media (max-width: 800px) {
   .footer-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 }
